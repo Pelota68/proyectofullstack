@@ -1,0 +1,14 @@
+
+const express = require('express')
+const router = express.Router()
+const Usuarios = require('../modelos/usuarios');
+const usuarioscontroladores = require('../router/controladores/usuarioscontroller');
+
+
+router.get('/', async (req, res) => {
+    res.send('Hello World');
+});
+
+module.exports= router;
+
+    

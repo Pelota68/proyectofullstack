@@ -1,0 +1,13 @@
+const mongoose = require('mongoose');
+async function connectDataBase() {
+    try {
+        await mongoose.connect('mongodb://atlas-sql-64ebaffcf90cc0576d1116d7-bynq1.a.query.mongodb.net/APPNOTIFICACIONES?ssl=true&authSource=admin', {
+            useNewUrlParser: true, 
+            useUnifiedTopology: true
+        });
+        console.log('Conexión exitosa a la base de datos');
+    } catch (error) {
+        console.error('Error en la base de datos:', error);
+      }
+    }
+  module.exports=connectDataBase

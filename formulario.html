@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>app de notificaciones</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h1>Suscripción a Notificaciones</h1>
+    <form id="subscription-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="curso">Curso:</label>
+        <select id="curso" required>
+            <option value="informatica">Informatica</option>
+            <option value="artes">Artes</option>
+            <option value="pintura">Pintura</option>
+            <option value="musica">Musica</option>
+            <option value="lectura">Lectura</option>
+        </select>
+        
+        <label for="usuarios">Usuario:</label>
+        <input type="text" id="usuarios" required>
+
+        <label for="nota-final">Nota Final:</label>
+        <input type="number" id="nota-final" required>
+
+        <label for="calificacion-nota">Calificación Nota:</label>
+        <select id="calificacion-nota" required>
+            <option value="No aprobado">No Aprobado</option>
+            <option value="Aprobado">Aprobado</option>
+        </select>
+        
+        <button type="submit">Suscribirse</button>
+    </form>
+    <div id="notification"></div>
+    <script src="app.js"></script>
+</body>
+</html>
